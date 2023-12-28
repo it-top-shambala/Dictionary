@@ -1,44 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>RusToEngWindow</class>
+ <widget class="QMainWindow" name="RusToEngWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
-  <property name="font">
-   <font>
-    <pointsize>16</pointsize>
-   </font>
-  </property>
   <property name="windowTitle">
-   <string>Dictionary</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget_2">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>381</width>
-      <height>271</height>
+      <x>20</x>
+      <y>20</y>
+      <width>761</width>
+      <height>561</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="titleWindow">
        <property name="font">
         <font>
          <pointsize>25</pointsize>
-         <fontweight>DemiBold</fontweight>
         </font>
        </property>
        <property name="text">
-        <string>Словарь</string>
+        <string>Рус -&gt; Eng</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -46,18 +40,22 @@
       </widget>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="buttonRusToEng">
-         <property name="text">
-          <string>Рус -&gt; Eng</string>
+        <widget class="QListWidget" name="listOfWords">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="buttonEngTpRus">
-         <property name="text">
-          <string>Eng -&gt; Рус</string>
+        <widget class="QListWidget" name="listOfTranslates">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
          </property>
         </widget>
        </item>
